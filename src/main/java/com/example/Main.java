@@ -57,7 +57,7 @@ public class Main {
         System.out.println();
 
         // Пункт 5: водители со стажем более 5 лет
-        System.out.println("=== Водители со стажем более 5 лет ===");
+        System.out.println("==== Водители со стажем более 5 лет ====");
         for (Car car : cars) {
             if (car.getDriver().getDrivingExperience() > 5) {
                 System.out.println(car.getDriver().getFullName()
@@ -70,7 +70,7 @@ public class Main {
         // Пункт 6: автомобили советского производства
         // Определяем советские марки по производителю двигателя
         // (упрощённо: ВАЗ, ГАЗ, ЗАЗ, Москвич и т.п.)
-        System.out.println("=== Автомобили советского производства ===");
+        System.out.println("==== Автомобили советского производства ====");
         for (Car car : cars) {
             String manufacturer = car.getEngine().getManufacturer();
             if (isSovietManufacturer(manufacturer)) {
